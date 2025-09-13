@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bobalight">
+
+    <!-- Rectangle banner at top -->
+    <View
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/bobadark"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Banner Title Text -->
+    <TextView
+        android:id="@+id/bobaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:fontFamily="@font/aclonica"
+        app:layout_constraintStart_toStartOf="@id/banner"
+        app:layout_constraintTop_toTopOf="@id/banner"
+        app:layout_constraintBottom_toBottomOf="@id/banner"
+        app:layout_goneMarginLeft="50dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Banner Image on the right -->
+    <ImageView
+        android:id="@+id/bobaImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@id/banner"
+        app:layout_constraintTop_toTopOf="@id/banner"
+        app:layout_constraintBottom_toBottomOf="@id/banner"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Boba Image"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bobadark"
+        app:menu="@menu/bottom_nav"
+        app:itemIconSize="40dp"
+        app:itemRippleColor="@color/bobalight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- Add more views here for coffee info -->
+</androidx.constraintlayout.widget.ConstraintLayout>

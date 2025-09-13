@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="matchalight">#A8D480</color>
+    <color name="matchadark">#0F8A33</color>
+    <color name="bobalight">#E6AE85</color>
+    <color name="bobadark">#EF9439</color>
+    <color name="coffeelight">#9D775D</color>
+    <color name="coffeedark">#6f4e37</color>
+
+</resources>

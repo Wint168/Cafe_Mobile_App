@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/equipment"
+        android:icon="@drawable/outline_coffee_maker_24"
+        android:title="Equipment" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Menu" />
+</menu>

@@ -6,18 +6,18 @@
     android:layout_height="match_parent"
     android:background="@color/coffeelight">
 
-    <!-- Rectangle banner at top -->
+    <!-- Banner -->
     <View
         android:id="@+id/banner"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:background="@color/coffeedark"
         android:layout_marginTop="25dp"
+        android:background="@color/coffeedark"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Banner Title Text -->
+    <!-- Banner Title -->
     <TextView
         android:id="@+id/coffeeTitle"
         android:layout_width="wrap_content"
@@ -25,25 +25,44 @@
         android:textColor="@color/white"
         android:textSize="40sp"
         android:fontFamily="@font/aclonica"
+        android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="@id/banner"
         app:layout_constraintTop_toTopOf="@id/banner"
-        app:layout_constraintBottom_toBottomOf="@id/banner"
-        app:layout_goneMarginLeft="50dp"
-        android:layout_marginStart="16dp"/>
+        app:layout_constraintBottom_toBottomOf="@id/banner"/>
 
-    <!-- Banner Image on the right -->
+    <!-- Banner Image -->
     <ImageView
         android:id="@+id/coffeeImage"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="centerCrop"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Coffee Image"
         app:layout_constraintEnd_toEndOf="@id/banner"
         app:layout_constraintTop_toTopOf="@id/banner"
-        app:layout_constraintBottom_toBottomOf="@id/banner"
-        android:layout_marginEnd="16dp"
-        android:contentDescription="Coffee Image"/>
+        app:layout_constraintBottom_toBottomOf="@id/banner"/>
 
-    <!-- BOTTOM NAV BAR -->
+    <!-- Scrollable container for equipments -->
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/equipmentData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:dividerPadding="12dp"
+            android:showDividers="middle"/>
+
+    </ScrollView>
+
+
+    <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_width="0dp"
@@ -54,8 +73,6 @@
         app:itemRippleColor="@color/coffeelight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-
-    <!-- Add more views here for coffee info -->
 </androidx.constraintlayout.widget.ConstraintLayout>

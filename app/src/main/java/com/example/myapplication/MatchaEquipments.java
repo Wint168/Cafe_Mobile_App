@@ -54,7 +54,8 @@ public class MatchaEquipments extends AppCompatActivity {
                 // already here
                 return true;
             } else if (id == R.id.menu) {
-                // navigate to menu activity
+                startActivity(new Intent(MatchaEquipments.this, MatchaMenu.class));
+                finish();
                 return true;
             }
             return false;

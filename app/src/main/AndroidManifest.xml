@@ -24,6 +24,15 @@
         <activity android:name=".CoffeeEquipments" android:exported="true" />
         <activity android:name=".MatchaEquipments" android:exported="true" />
         <activity android:name=".BubbleTeaEquipments" android:exported="true" />
+        <activity android:name=".CoffeeMenu" android:exported="true" />
+        <activity android:name=".BubbleTeaMenu" android:exported="true" />
+        <activity android:name=".MatchaMenu" android:exported="true" />
+        <activity android:name=".CoffeeRecipe" android:exported="true" />
+        <activity android:name=".MatchaRecipe" android:exported="true" />
+        <activity android:name=".BubbleTeaRecipe" android:exported="true" />
+
+
+
 
         <meta-data
             android:name="preloaded_fonts"

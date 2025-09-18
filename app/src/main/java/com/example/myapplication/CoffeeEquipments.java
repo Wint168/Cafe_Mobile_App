@@ -56,7 +56,8 @@ public class CoffeeEquipments extends AppCompatActivity {
                 // already here
                 return true;
             } else if (id == R.id.menu) {
-                // navigate to menu activity
+                startActivity(new Intent(CoffeeEquipments.this, CoffeeMenu.class));
+                finish();
                 return true;
             }
             return false;

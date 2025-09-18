@@ -54,7 +54,8 @@ public class BubbleTeaEquipments extends AppCompatActivity {
                 // already here
                 return true;
             } else if (id == R.id.menu) {
-                // navigate to menu activity
+                startActivity(new Intent(BubbleTeaEquipments.this, BubbleTeaMenu.class));
+                finish();
                 return true;
             }
             return false;

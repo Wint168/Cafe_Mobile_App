@@ -52,6 +52,7 @@ public class MatchaRecipe extends AppCompatActivity {
             } else if (id == R.id.menu) {
                 startActivity(new Intent(MatchaRecipe.this, MatchaMenu.class));
                 return true;
+
             }
             return false;
         });

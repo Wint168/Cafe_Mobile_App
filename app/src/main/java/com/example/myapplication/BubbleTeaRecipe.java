@@ -52,6 +52,7 @@ public class BubbleTeaRecipe extends AppCompatActivity{
             } else if (id == R.id.menu) {
                 startActivity(new Intent(BubbleTeaRecipe.this, BubbleTeaMenu.class));
                 return true;
+
             }
             return false;
         });

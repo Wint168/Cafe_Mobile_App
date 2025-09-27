@@ -50,7 +50,7 @@ public class MatchaRecipe extends AppCompatActivity {
                 startActivity(new Intent(MatchaRecipe.this, MatchaEquipments.class));
                 return true;
             } else if (id == R.id.menu) {
-                //alredy here
+                startActivity(new Intent(MatchaRecipe.this, MatchaMenu.class));
                 return true;
             }
             return false;

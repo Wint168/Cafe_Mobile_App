@@ -49,7 +49,7 @@ public class CoffeeRecipe extends AppCompatActivity {
                 startActivity(new Intent(CoffeeRecipe.this, CoffeeEquipments.class));
                 return true;
             } else if (id == R.id.menu) {
-                //alredy here
+                startActivity(new Intent(CoffeeRecipe.this, CoffeeMenu.class));
                 return true;
             }
             return false;

@@ -41,6 +41,7 @@ public class CoffeeRecipe extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
         bottomNav.setOnItemSelectedListener(item -> {
             int id = item.getItemId();
+
             if (id == R.id.home) {
                 startActivity(new Intent(CoffeeRecipe.this, frontpage.class));
                 finish();
